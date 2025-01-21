@@ -1,0 +1,17 @@
+def main():
+    # Input: Number N
+    N = int(input("Enter the value of N: "))
+    
+    # Generate a list of numbers from 1 to N
+    numbers = list(range(1, N + 1))
+    
+    # a) Filter out even numbers using list comprehension
+    odd_numbers = [num for num in numbers if num % 2 != 0]
+    print(f"Odd numbers: {odd_numbers}")
+    
+    # b) Generate a new list with the cube of odd numbers
+    cubes_of_odd_numbers = [num ** 3 for num in odd_numbers]
+    print(f"Cube of odd numbers: {cubes_of_odd_numbers}")
+
+
+  main()
